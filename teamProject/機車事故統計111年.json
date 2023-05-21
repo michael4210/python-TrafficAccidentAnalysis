@@ -1,0 +1,82 @@
+[
+ {
+  "RANKING": 1,
+  "CAUSE": "未注意車前狀況",
+  "COUNT": 5245,
+  "DEATH_COUNT": 61,
+  "INJURED_COUNT": 4795,
+  "CASUALTIES_COUNT": 4856
+ },
+ {
+  "RANKING": 2,
+  "CAUSE": "未依規定讓車",
+  "COUNT": 4269,
+  "DEATH_COUNT": 16,
+  "INJURED_COUNT": 3581,
+  "CASUALTIES_COUNT": 3597
+ },
+ {
+  "RANKING": 3,
+  "CAUSE": "未保持行車安全距離",
+  "COUNT": 2599,
+  "DEATH_COUNT": 5,
+  "INJURED_COUNT": 2281,
+  "CASUALTIES_COUNT": 2286
+ },
+ {
+  "RANKING": 4,
+  "CAUSE": "未依規定減速",
+  "COUNT": 1879,
+  "DEATH_COUNT": 15,
+  "INJURED_COUNT": 1785,
+  "CASUALTIES_COUNT": 1800
+ },
+ {
+  "RANKING": 5,
+  "CAUSE": "未保持行車安全間隔",
+  "COUNT": 1636,
+  "DEATH_COUNT": 8,
+  "INJURED_COUNT": 1238,
+  "CASUALTIES_COUNT": 1246
+ },
+ {
+  "RANKING": 6,
+  "CAUSE": "違反號誌管制或指揮",
+  "COUNT": 1512,
+  "DEATH_COUNT": 14,
+  "INJURED_COUNT": 1303,
+  "CASUALTIES_COUNT": 1317
+ },
+ {
+  "RANKING": 7,
+  "CAUSE": "左轉彎未依規定",
+  "COUNT": 1166,
+  "DEATH_COUNT": 10,
+  "INJURED_COUNT": 919,
+  "CASUALTIES_COUNT": 929
+ },
+ {
+  "RANKING": 8,
+  "CAUSE": "起步未注意其他車(人)安全",
+  "COUNT": 1151,
+  "DEATH_COUNT": 3,
+  "INJURED_COUNT": 947,
+  "CASUALTIES_COUNT": 950
+ },
+ {
+  "RANKING": 9,
+  "CAUSE": "違反特定標誌(線)禁制",
+  "COUNT": 644,
+  "DEATH_COUNT": 1,
+  "INJURED_COUNT": 562,
+  "CASUALTIES_COUNT": 563
+ },
+ {
+  "RANKING": 10,
+  "CAUSE": "變換車道或方向不當",
+  "COUNT": 527,
+  "DEATH_COUNT": 0,
+  "INJURED_COUNT": 409,
+  "CASUALTIES_COUNT": 409
+ }
+]
