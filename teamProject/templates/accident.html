@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>交通事故統計</title>
+    <hr>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,8 +13,12 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <h1>All Accidents</h1>
+  <body style = "background-color: 	#E0E0E0">
+    <div class = "container">
+        {% block headmessage %}{% endblock %}
+        {% block 'menu.html' %}{% endblock %}
+        <hr>
+    <!-- <h1>All Accidents</h1> -->
 
     <h2>Motorcycle Accidents</h2>
     <ul>
