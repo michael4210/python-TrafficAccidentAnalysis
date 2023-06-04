@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.db.models import Sum,F
+from django.db.models import Sum
 from collections import defaultdict
 from .models import MotorcycleAccident, SmallCarAccident, BicycleAccident, PedestrianAccident,TrafficAccident_110,TrafficAccident_111
 

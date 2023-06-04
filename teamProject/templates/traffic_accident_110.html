@@ -16,27 +16,12 @@
 
   <body style="background-color: #e0e0e0">
     <h1>110年交通事故</h1>
-    {% comment %}
-    <table>
-      <tr>
-        <th>Street</th>
-        <th>Total Injured</th>
-        <th>Total Death</th>
-      </tr>
-      {% for data in street_data %}
-      <tr>
-        <td>{{ data.street }}</td>
-        <td>{{ data.total_injured }}</td>
-        <td>{{ data.total_death }}</td>
-      </tr>
-      {% endfor %}
-    </table>
-    {% endcomment %} {% for accident in traffic_accidents %}
+    {% for accident in traffic_accidents %}
     <h2>地區: {{ accident.district }}</h2>
     <p>街道: {{ accident.street }}</p>
     <p>死亡人數: {{ accident.death_toll }}</p>
     <p>受傷人數: {{ accident.injured_toll }}</p>
-    <!-- 加入您需要的其餘欄位 -->
+
     {% endfor %}
   </body>
 </html>
