@@ -96,6 +96,9 @@ def conditions_analysis(request):
     }
 
     return render(request, 'conditions_analysis.html', context)
+
+def member_introduction(request) :
+    return render(request, 'member_introduction.html', locals())
     # conditions = ['weather_desc', 'light_desc', 'road_surface_condition_desc', 'road_type_desc', 'traffic_sign_desc']
     # condition_casualties = {}
 

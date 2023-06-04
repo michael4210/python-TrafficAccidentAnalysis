@@ -23,5 +23,6 @@ urlpatterns = [
     path('trafficaccident_111/',website.views.traffic_accidents_111),
     path('analysis/',website.views.analysis),
     path('conditions/',website.views.conditions_analysis),
+    path('members/', website.views.member_introduction),
     
 ]
