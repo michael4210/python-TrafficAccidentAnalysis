@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>110年交通事故分析</title>
+    <hr />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body style="background-color: #e0e0e0">
+    {% for condition, casualties in condition_casualties.items %}
+    <h3>{{ condition }}</h3>
+    <table>
+      <tr>
+        <th>Condition</th>
+        <th>Total Casualties</th>
+      </tr>
+      {% for casualty in casualties %}
+      <tr>
+        <td>{{ casualty.0 }}</td>
+        <td>{{ casualty.1 }}</td>
+      </tr>
+      {% endfor %}
+      <!-- 这个是结束内部的for循环 -->
+    </table>
+    {% endfor %}
+  </body>
+</html>
+{% comment %}
+<h1>Conditions Analysis</h1>
+{% for condition, casualties in condition_casualties.items %}
+<h2>{{ condition }}</h2>
+<table>
+  <tr>
+    <th>Condition</th>
+    <th>Total Casualties</th>
+  </tr>
+  {% for casualty in casualties %}
+  <tr>
+    <td>{{ casualty.condition}}</td>
+    <td>{{ casualty.total_casualties }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endfor %} {% endcomment %}

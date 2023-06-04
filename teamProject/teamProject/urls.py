@@ -18,5 +18,10 @@ from django.urls import path
 import website.views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', website.views.all_accidents)
+    path('', website.views.all_accidents),
+    path('trafficaccident_110/',website.views.traffic_accidents_110),
+    path('trafficaccident_111/',website.views.traffic_accidents_111),
+    path('analysis/',website.views.analysis),
+    path('conditions/',website.views.conditions_analysis),
+    
 ]
