@@ -20,13 +20,10 @@
             <div class = "quote">
                 {% block headmessage %} {% endblock %}
             </div>
-            <div class = "typebtn">
-                {% block typeButton %} {% endblock %}
-            </div>
         </div>
         <style>
             :root {
-                --background_image: url('https://images.unsplash.com/photo-1415594445260-63e18261587e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+                --background_image: url('https://images.unsplash.com/photo-1517953377824-516f2dca803b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1789&q=80');
             }
             .banner{
                 padding-top: 250px;
@@ -42,13 +39,20 @@
                 font-family: DFKai-sb;
                 color: white;
                 padding-left: 20px;
-                border-left: 8px solid #fff;
+                border-left: 4px solid #fff;
             }
             .typebtn{
                 font-family: monospace;
                 margin-top: 100px;
             }
             </style>
+            <script>
+                const root = document.documentElement;
+
+                const background = document.getElementsByClassName('banner');
+
+                background.addEventListener()
+            </script>
         <div class = "container" style = "padding-top: 30px;">
             {% block content %} {% endblock %}
         </div>
