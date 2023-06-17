@@ -3,8 +3,15 @@ from django.db.models import Sum
 from collections import defaultdict
 from .models import MotorcycleAccident, SmallCarAccident, BicycleAccident, PedestrianAccident,TrafficAccident_110,TrafficAccident_111
 
-
 def all_accidents(request):
+    # background_images = ["https://images.unsplash.com/photo-1415594445260-63e18261587e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80", 
+    #                      "https://images.unsplash.com/photo-1473042904451-00171c69419d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1199&q=80", 
+    #                      "https://images.unsplash.com/photo-1635930919419-f935f8902b0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80", 
+    #                      "https://images.unsplash.com/photo-1498084393753-b411b2d26b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80", 
+    #                      "https://images.unsplash.com/photo-1520049315146-ae88e5759e05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1330&q=80", 
+    #                      "https://images.unsplash.com/photo-1517953377824-516f2dca803b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1789&q=80"]
+    # background_image = random.choice(background_images)
+
     motorcycle_accidents = MotorcycleAccident.objects.all()
     small_car_accidents = SmallCarAccident.objects.all()
     bicycle_accidents = BicycleAccident.objects.all()
@@ -99,6 +106,40 @@ def conditions_analysis(request):
 
 def member_introduction(request) :
     return render(request, 'member_introduction.html', locals())
+
+def SmallCarAccidents(request) :
+    
+    small_car_accidents = SmallCarAccident.objects.all()
+
+    context = {
+        'small_car_accidents': small_car_accidents
+    }
+
+    return render(request, 'SmallCarAccidents.html', locals())
+
+def MotorcycleAccidents(request) :
+    motorcycle_accidents = MotorcycleAccident.objects.all()
+
+    context = {
+        'motorcycle_accidents': motorcycle_accidents
+    }
+    return render(request, 'MotorcycleAccidents.html', locals())
+
+def BicycleAccidents(request) :
+    bicycle_accidents = BicycleAccident.objects.all()
+
+    context = {
+        'bicycle_accidents': bicycle_accidents
+    }
+    return render(request, 'BicycleAccidents.html', locals())
+
+def PedestrianAccidents(request) :
+    pedestrian_accidents = PedestrianAccident.objects.all()
+
+    context = {
+        'pedestrian_accidents': pedestrian_accidents
+    }
+    return render(request, 'PedestrianAccidents.html', locals())
     # conditions = ['weather_desc', 'light_desc', 'road_surface_condition_desc', 'road_type_desc', 'traffic_sign_desc']
     # condition_casualties = {}
 

@@ -24,5 +24,8 @@ urlpatterns = [
     path('analysis/',website.views.analysis),
     path('conditions/',website.views.conditions_analysis),
     path('members/', website.views.member_introduction),
-    
+    path('SmallCar/', website.views.SmallCarAccidents),
+    path('Motorcycle/', website.views.MotorcycleAccidents),
+    path('Bicycle/', website.views.BicycleAccidents),
+    path('Pedestrian/', website.views.PedestrianAccidents)
 ]
