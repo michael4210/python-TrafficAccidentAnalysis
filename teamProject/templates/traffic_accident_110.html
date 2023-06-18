@@ -7,13 +7,41 @@
 {% endblock %}
 
 {% block content %}
+
+    <select id = "areaChooser" onchange = "changeDistrict()" class = "areaChooser">
+        <option value = "nope" selected = true>請選擇</option>
+        {% for accident in traffic_accidents %}
+        <option value = {{accident.district}}>{{accident.district}}</option>
+        {% endfor %}
+    </select>
+    <script type = "text/JavaScript">
+        var objs;
+        var district;
+        function changeDistrict(){
+            objs = document.getElementById("areaChooser");
+            district = objs.options[objs.selectedIndex].value;
+            
+        }
+        {% for accident in traffic_accidents %}
+        {% if accident.district == dis %}
+        document.writeln("ss");
+        {% endif %}
+        {% endfor %}
+    </script>
+
+    <!-- <py-script>
+        print("Hello World!")
+    </py-script> -->
+
     
+
     <h4>110年交通事故</h4>
     {% for accident in traffic_accidents %}
+    {% if accident.district == "岡山區" %}
     <h5>地區: {{ accident.district }}</h5>
     <p>街道: {{ accident.street }}</p>
     <p>死亡人數: {{ accident.death_toll }}</p>
     <p>受傷人數: {{ accident.injured_toll }}</p>
-
+    {% endif %}
     {% endfor %}
 {% endblock %}

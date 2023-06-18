@@ -7,21 +7,58 @@
 {% endblock %}
 
 {% block content %}
-    <h4>Street Casualties Ranking</h4>
-    <table>
-      <thead>
-        <tr>
-          <th>Street</th>
-          <th>Total Casualties</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for street, casualties in street_casualties %}
-        <tr>
-          <td>{{ street }}</td>
-          <td>{{ casualties }}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+    <h2 style = "text-align: center;"><font face = "標楷體">高雄市街道傷亡名單</font></h2>
+    <div style = "padding-left: 520px; padding-top: 30px; padding-bottom: 30px;">
+      <input class = "SearchInput" placeholder = "search" id = "input">
+      <button class = "SearchButton">Search</button>
+    </div>
+    <div style = "padding-left: 510px; font-size: 22px;">
+      <table>
+        <thead>
+          <tr>
+            <th>Street</th>
+            <th>Total Casualties</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for street, casualties in street_casualties %}
+          <tr style = "line-height: 50px;">
+            <a id = "{{ street }}"></a>
+            <td>{{ street }}</td>
+            <td style = "padding-left: 50px;">{{ casualties }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <style>
+      .SearchButton{
+        color: 	white;
+        border-radius: 5px;
+        background-color: 	#46A3FF;
+        display: inline-block;
+        width: 80px;
+        height: 40px;
+        text-decoration: none;
+        border: none;
+      }
+      .SearchInput{
+        height: 30px;
+        border-color: 	#0072E3;
+        border-radius: 3px;
+      }
+    </style>
+    <script>
+      var input = document.getElementById("input");
+      var submit = document.querySelector(".SearchButton");
+
+      function Search(value){
+        var str = "";
+        var submitValue = input.value;
+        str = "#" + submitValue;
+        alert(str);
+        document.location.href = str;
+      }
+      submit.addEventListener("click", Search);
+    </script>
 {% endblock %}
