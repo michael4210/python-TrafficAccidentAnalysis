@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}高雄市交通事故條件分析{% endblock %}
+
+{% block headmessage %}
+<h3>高雄市交通事故條件分析</h3>
+{% endblock %}
+
+{% block content %}
+    {% for condition, casualties in condition_casualties.items %}
+    <h3>{{ condition }}</h3>
+    <table>
+      <tr>
+        <th>Condition</th>
+        <th>Total Casualties</th>
+      </tr>
+      {% for casualty in casualties %}
+      <tr>
+        <td>{{ casualty.0 }}</td>
+        <td>{{ casualty.1 }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% endfor %}
+  </body>
+</html>
+{% comment %}
+<h1>Conditions Analysis</h1>
+{% for condition, casualties in condition_casualties.items %}
+<h2>{{ condition }}</h2>
+<table>
+  <tr>
+    <th>Condition</th>
+    <th>Total Casualties</th>
+  </tr>
+  {% for casualty in casualties %}
+  <tr>
+    <td>{{ casualty.condition}}</td>
+    <td>{{ casualty.total_casualties }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endfor %} {% endcomment %}
+{% endblock %}

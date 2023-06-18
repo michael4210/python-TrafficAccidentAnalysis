@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}9: 高雄市交通事故統計{% endblock %}
+
+{% block headmessage %}
+<h3 style = "padding-top: 5px; font-size: 30px;"><font face = "標楷體">高雄市小型車交通事故統計</font></h3>
+{% endblock %}
+
+{% block content %}
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style = "color: white; margin-bottom: 30px; width: 40%; height: 45px; align-items: center; margin-left: 30%; font-size: 20px; background-color: #000079;">
+    Small Car Accidnets
+  </button>
+  <ul class="dropdown-menu" style = "width: 40%; text-align: center;">
+    <li style = "background-color: grey;"><a class="dropdown-item" href="#">Small Car Accidents</a></li>
+    <li><a class="dropdown-item" href="/Motorcycle/">Motorcycle Accidents</a></li>
+    <li><a class="dropdown-item" href="/Bicycle/">Bicycle Accidents</a></li>
+    <li><a class="dropdown-item" href="/Pedestrian/">Pedestrian Accidents</a></li>
+  </ul>
+</div>
+  <div>
+    <canvas id = "myChart" width = "800" height = "300" style = "padding-bottom: 50px;"></canvas>
+  </div>
+  <script>
+    const ctx = document.getElementById('myChart');
+
+    new Chart(ctx, {
+      type: 'bar', 
+      data: {
+        labels: [
+          {% for accident in small_car_accidents %}
+            '{{ accident.cause }}',
+          {% endfor %}
+        ], 
+        datasets: [{
+          label: 'Numbers of the type of accident', 
+          data: [
+            {% for accident in small_car_accidents %}
+              {{accident.count}},
+            {% endfor %}
+          ], 
+          borderWidth: 1
+        }]
+      }, 
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+{% endblock %}

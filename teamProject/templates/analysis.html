@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}高雄市街道交通事故統計{% endblock %}
+
+{% block headmessage %}
+<h3>高雄市街道交通事故統計</h3>
+{% endblock %}
+
+{% block content %}
+    <h4>Street Casualties Ranking</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>Street</th>
+          <th>Total Casualties</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for street, casualties in street_casualties %}
+        <tr>
+          <td>{{ street }}</td>
+          <td>{{ casualties }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+{% endblock %}

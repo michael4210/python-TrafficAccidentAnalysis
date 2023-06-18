@@ -1,0 +1,42 @@
+[
+ {
+  "RANKING": 1,
+  "CAUSE": "未依規定行走行人穿越道、地下道、天橋而穿越道路",
+  "COUNT": 130,
+  "DEATH_COUNT": 5,
+  "INJURED_COUNT": 116,
+  "CASUALTIES_COUNT": 121
+ },
+ {
+  "RANKING": 2,
+  "CAUSE": "穿越道路未注意左右來車",
+  "COUNT": 74,
+  "DEATH_COUNT": 1,
+  "INJURED_COUNT": 67,
+  "CASUALTIES_COUNT": 68
+ },
+ {
+  "RANKING": 3,
+  "CAUSE": "未依標誌、標線、號誌或手勢指揮穿越道路",
+  "COUNT": 47,
+  "DEATH_COUNT": 1,
+  "INJURED_COUNT": 39,
+  "CASUALTIES_COUNT": 40
+ },
+ {
+  "RANKING": 4,
+  "CAUSE": "在道路上嬉戲或奔走不定",
+  "COUNT": 19,
+  "DEATH_COUNT": 1,
+  "INJURED_COUNT": 17,
+  "CASUALTIES_COUNT": 18
+ },
+ {
+  "RANKING": 5,
+  "CAUSE": "在路上工作未設適當標識",
+  "COUNT": 2,
+  "DEATH_COUNT": 0,
+  "INJURED_COUNT": 0,
+  "CASUALTIES_COUNT": 0
+ }
+]

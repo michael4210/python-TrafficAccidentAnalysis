@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}111年高雄市交通事故統計{% endblock %}
+
+{% block headmessage %}
+<h3>111年高雄市交通事故統計</h3>
+{% endblock %}
+
+{% block content %}
+    <h4>111年交通事故</h4>
+    {% for accident in traffic_accidents %}
+    <h5>地區: {{ accident.district }}</h5>
+    <p>街道: {{ accident.street }}</p>
+    <p>死亡人數: {{ accident.death_toll }}</p>
+    <p>受傷人數: {{ accident.injured_toll }}</p>
+    <!-- 加入您需要的其餘欄位 -->
+    {% endfor %}
+{% endblock %}

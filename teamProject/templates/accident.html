@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}9: 高雄市交通事故統計{% endblock %}
+
+{% block headmessage %}
+<h3 style = "padding-top: 5px; font-size: 30px;"><font face = "標楷體">高雄市交通事故統計</font></h3>
+{% endblock %}
+
+{% block content %}
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style = "color: white; margin-bottom: 30px; width: 40%; height: 45px; align-items: center; margin-left: 30%; font-size: 20px; background-color: #000079;">
+    Press to choose a type of accidents
+  </button>
+  <ul class="dropdown-menu" style = "width: 40%; text-align: center;">
+    <li><a class="dropdown-item" href="/SmallCar/">Small Car Accidents</a></li>
+    <li><a class="dropdown-item" href="/Motorcycle/">Motorcycle Accidents</a></li>
+    <li><a class="dropdown-item" href="/Bicycle/">Bicycle Accidents</a></li>
+    <li><a class="dropdown-item" href="/Pedestrian/">Pedestrian Accidents</a></li>
+  </ul>
+</div>
+{% endblock %}
+
+  <!-- <h4>Motorcycle Accidents</h4>
+  <ul>
+    {% for accident in motorcycle_accidents %}
+    <li>{{ accident.cause }}: {{ accident.count }}</li>
+    {% endfor %}
+  </ul>
+  
+  <h4>Small Car Accidents</h4>
+  <ul>
+    {% for accident in small_car_accidents %}
+    <li>{{ accident.cause }}: {{ accident.count }}</li>
+    {% endfor %}
+  </ul> 
+
+  <h4>Bicycle Accidents</h4>
+  <ul>
+    {% for accident in bicycle_accidents %}
+    <li>{{ accident.cause }}: {{ accident.count }}</li>
+    {% endfor %}
+  </ul>
+
+  <h4>Pedestrian Accidents</h4>
+  <ul>
+    {% for accident in pedestrian_accidents %}
+    <li>{{ accident.cause }}: {{ accident.count }}</li>
+    {% endfor %}
+  </ul> -->
