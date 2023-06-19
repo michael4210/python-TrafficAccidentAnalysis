@@ -1,0 +1,921 @@
+{% extends "base.html" %}
+
+{% block title %}111年高雄市交通事故統計{% endblock %}
+
+{% block headmessage %}
+<h3>111年高雄市交通事故統計</h3>
+{% endblock %}
+
+{% block content %}
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>楠梓區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "楠梓區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div><div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>左營區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "左營區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>鼓山區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "鼓山區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>三民區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "三民區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>苓雅區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "苓雅區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>新興區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "新興區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>前金區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "前金區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>鹽埕區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "鹽埕區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>前鎮區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "前鎮區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>旗津區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "旗津區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>小港區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "小港區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>鳳山區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "鳳山區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>茂林區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "茂林區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>甲仙區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "甲仙區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>六龜區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "六龜區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>杉林區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "杉林區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>美濃區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "美濃區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>內門區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "內門區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>仁武區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "仁武區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>田寮區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "田寮區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>旗山區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "旗山區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>梓官區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "梓官區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>阿蓮區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "阿蓮區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>湖內區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "湖內區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>岡山區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "岡山區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>茄萣區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "茄萣區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>路竹區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "路竹區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>鳥松區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "鳥松區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>永安區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "永安區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>燕巢區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "燕巢區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>大樹區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "大樹區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>大寮區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "大寮區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>林園區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "林園區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>彌陀區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "彌陀區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>橋頭區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "橋頭區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>大社區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "大社區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>那瑪夏區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "那瑪夏區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+<div style = "text-align: center;">
+    <table class = "table">
+        <thead>
+            <tr style = "font-size: 36px;">
+                <th>桃源區</th>
+            </tr>
+        </thead>    
+    {% for accident in traffic_accidents %}
+    {% if accident.district == "桃源區" %}
+        <tbody>
+            <tr style = "font-size: 22px;">
+                <td><strong>街道: {{ accident.street }}</strong></td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>死亡人數: {{ accident.death_toll }}</td>
+            </tr>
+            <tr style = "font-size: 22px;">
+                <td>受傷人數: {{ accident.injured_toll }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    {% endfor %}
+    </table>
+</div>
+{% endblock %}

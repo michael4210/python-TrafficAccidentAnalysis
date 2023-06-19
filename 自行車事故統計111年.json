@@ -1,0 +1,82 @@
+[
+ {
+  "RANKING": 1,
+  "CAUSE": "未依規定讓車",
+  "COUNT": 267,
+  "DEATH_COUNT": 1,
+  "INJURED_COUNT": 232,
+  "CASUALTIES_COUNT": 233
+ },
+ {
+  "RANKING": 2,
+  "CAUSE": "未注意車前狀況",
+  "COUNT": 215,
+  "DEATH_COUNT": 1,
+  "INJURED_COUNT": 189,
+  "CASUALTIES_COUNT": 190
+ },
+ {
+  "RANKING": 3,
+  "CAUSE": "左轉彎未依規定",
+  "COUNT": 145,
+  "DEATH_COUNT": 4,
+  "INJURED_COUNT": 123,
+  "CASUALTIES_COUNT": 127
+ },
+ {
+  "RANKING": 4,
+  "CAUSE": "違反號誌管制或指揮",
+  "COUNT": 122,
+  "DEATH_COUNT": 0,
+  "INJURED_COUNT": 110,
+  "CASUALTIES_COUNT": 110
+ },
+ {
+  "RANKING": 5,
+  "CAUSE": "未保持行車安全間隔",
+  "COUNT": 87,
+  "DEATH_COUNT": 1,
+  "INJURED_COUNT": 74,
+  "CASUALTIES_COUNT": 75
+ },
+ {
+  "RANKING": 6,
+  "CAUSE": "未依規定減速",
+  "COUNT": 78,
+  "DEATH_COUNT": 4,
+  "INJURED_COUNT": 74,
+  "CASUALTIES_COUNT": 78
+ },
+ {
+  "RANKING": 7,
+  "CAUSE": "起步未注意其他車(人)安全",
+  "COUNT": 76,
+  "DEATH_COUNT": 1,
+  "INJURED_COUNT": 62,
+  "CASUALTIES_COUNT": 63
+ },
+ {
+  "RANKING": 8,
+  "CAUSE": "逆向行駛",
+  "COUNT": 56,
+  "DEATH_COUNT": 1,
+  "INJURED_COUNT": 50,
+  "CASUALTIES_COUNT": 51
+ },
+ {
+  "RANKING": 9,
+  "CAUSE": "變換車道或方向不當",
+  "COUNT": 49,
+  "DEATH_COUNT": 2,
+  "INJURED_COUNT": 44,
+  "CASUALTIES_COUNT": 46
+ },
+ {
+  "RANKING": 10,
+  "CAUSE": "違反特定標誌(線)禁制",
+  "COUNT": 39,
+  "DEATH_COUNT": 0,
+  "INJURED_COUNT": 38,
+  "CASUALTIES_COUNT": 38
+ }
+]
